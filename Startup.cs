@@ -26,6 +26,7 @@ namespace Modas
                 app.UseDeveloperExceptionPage();
             }
             app.UseMvcWithDefaultRoute();
+            app.UseStaticFiles();
         }
     }
 }
