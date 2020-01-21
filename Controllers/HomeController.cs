@@ -7,6 +7,6 @@ namespace Modas.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index() => "Hello World";
+        public string Index() => "Blablabla";
     }
 }
