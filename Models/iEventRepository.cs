@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace Modas.Models
 {
@@ -9,8 +7,10 @@ namespace Modas.Models
     {
         IQueryable<Event> Events { get; }
         IQueryable<Location> Locations { get; }
+
         Event AddEvent(Event evt);
         Event UpdateEvent(Event evt);
+        void PatchEvent(int id, JsonPatchDocument<Event> patch);
         void DeleteEvent(int eventId);
     }
 }
